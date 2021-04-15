@@ -7,8 +7,8 @@ $mont: 'Montserrat', sans-serif;
     color: #1a1a1a;
     text-align: center;
     font-weight: 500;
-    padding-bottom: 20px;
-    margin: 100px 0;
+    padding: 100px 0 20px 0;
+    margin-bottom: 100px;
     @media (max-width: 768px) {
         font-size: 39px;
     }
@@ -184,7 +184,7 @@ body {
         display: flex;
         align-items: center;
         background: linear-gradient(#F8F8F8, #fff);
-        padding: 60px 0;
+        padding: 100px 0;
         @media (max-width: 1160px) {
             flex-direction: column; 
         }
@@ -224,6 +224,80 @@ body {
         }
         & img {
             height: 500px;
+        }
+    }
+}
+// quality
+.quality {
+    &__title {
+        @extend %title;
+    }
+    &__content {
+        margin-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 1139px) {
+            justify-content: center;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 55px;
+        @media (min-width: 1140) {
+            &:nth-child(2) {
+                margin: 0 55px;
+            }
+            &:nth-child(5) {
+                margin: 0 55px;
+            }
+        }
+        @media (max-width: 1139px) {
+            margin: 0 30px;
+        }
+        @media (min-width: 821px) {
+            max-width: 330px;
+        }
+        @media (max-width: 820px) {
+            width: 100%;
+            margin: 0;
+        }
+        &-icon {
+            background: #484848;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            box-shadow: 0px 0px 37px 8px #00000040;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & i {
+                color: #fff;
+                font-size: 41px;
+                padding-left: 2px;
+                &.fas.fa-gem {
+                    padding-top: 6px;
+                }
+            }
+        }
+        &-title {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 25px 0;
+            @media (max-width: 768px) {
+                font-size: 22px;
+            }
+        }
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
         }
     }
 }
