@@ -12,6 +12,8 @@
 @media (max-width: 768px) {
   .about__title, .quality__title, .service__title, .review__title {
     font-size: 39px;
+    padding: 75px 0 20px 0;
+    margin-bottom: 75px;
   }
 }
 
@@ -268,6 +270,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 50px 0 0 0;
   }
 }
 
@@ -482,25 +485,25 @@ body {
   border-top: 15px solid #484848;
 }
 
-.service__block:hover > .service__block-img .img-2 {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.service__block:hover > .service__block-img .img-1 {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.service__block:hover > .service__block-img .img-3 {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+@media (min-width: 769px) {
+  .service__block:hover > .service__block-img .img-2 {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+  .service__block:hover > .service__block-img .img-1 {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+  .service__block:hover > .service__block-img .img-3 {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
 }
 
 @media (max-width: 1220px) {
