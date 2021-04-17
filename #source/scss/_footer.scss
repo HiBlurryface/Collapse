@@ -1,0 +1,70 @@
+// footer 
+.footer {
+    background: #1a1a1a;
+    &__container {
+        padding: 16px 0 30px;
+    }
+    &__content {
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        opacity: 0.4;
+        padding: 20px 0;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        @media (min-width: 769px) {
+            float: left;
+            width: 100px;
+        }
+        &-icon {
+            width: 40px;
+            height: 40px;
+        }
+        &-name {
+            font-size: 20px;
+            color: #fff;
+            padding-left: 20px;
+        }
+    }
+    &__copyright {
+        color: #fff;
+        display: flex;
+        @media (max-width: 768px) {
+            padding: 25px 0;
+        }
+        @media (min-width: 769px) {
+            justify-content: center;
+            margin-top: 14px;
+        }
+        &-text {
+            padding-left: 10px;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 768px) {
+            order: 3;
+        }
+        @media (min-width: 769px) {
+            justify-content: flex-end;
+            margin-top: 5px;
+            float: right;
+            width: 100px;
+        }
+        &-link {
+            &:first-child {
+                padding-right: 15px;
+            }
+        }
+        & i {
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}

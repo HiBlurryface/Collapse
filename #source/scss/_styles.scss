@@ -1,0 +1,40 @@
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+$mont: 'Montserrat', sans-serif;
+
+%title {
+    position: relative;
+    font-family: $mont;
+    font-size: 47px;
+    color: #1a1a1a;
+    text-align: center;
+    font-weight: 500;
+    padding: 100px 0 20px 0;
+    margin-bottom: 100px;
+    @media (max-width: 768px) {
+        font-size: 39px;
+        padding: 75px 0 20px 0;
+        margin-bottom: 75px;
+    }
+    &:before {
+        position: absolute;
+        content: ' ';
+        width: 66px;
+        height: 4px;
+        background: #904F4F;
+        bottom: 0;
+        left: 50%;
+        transform: translate( -50%, 0);
+    }
+}
+.wrapper {
+    overflow: hidden;
+    overflow-x: hidden;
+}
+body {
+    font-family: $mont;
+}
