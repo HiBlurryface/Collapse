@@ -635,6 +635,7 @@ body {
 @media (min-width: 769px) {
   .review__slider-text {
     max-width: 80%;
+    height: 120px;
   }
 }
 
