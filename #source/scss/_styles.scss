@@ -37,4 +37,9 @@ $mont: 'Montserrat', sans-serif;
 }
 body {
     font-family: $mont;
+    &.lock {
+        @media (max-width: 870px) {
+            overflow: hidden;
+        }
+    }
 }

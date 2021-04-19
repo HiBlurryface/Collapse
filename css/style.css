@@ -45,6 +45,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 870px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
 .header {
   position: fixed;
   z-index: 100;
