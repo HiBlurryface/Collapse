@@ -51,6 +51,14 @@ body {
   }
 }
 
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .header {
   position: fixed;
   z-index: 100;
@@ -998,4 +1006,8 @@ body {
 
 .swiper-button-prev:after, .swiper-button-next:after {
   color: #fff;
+}
+
+footer {
+  padding: 16 20px 30px;
 }
