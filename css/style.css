@@ -607,7 +607,6 @@ img {
           align-items: center;
   text-align: center;
   padding-bottom: 105px;
-  z-index: -10;
 }
 
 .quality__block-anim._anim-show {
